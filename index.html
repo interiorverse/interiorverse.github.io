@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Large-scale photorealistic indoor dataset">
+  <meta name="keywords" content="Indoor dataset">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InteriorVerse: Large-scale Photorealistic Indoor Scene Dataset</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title" style="font-size:34px;">InteriorVerse: Large-scale Photorealistic Indoor Scene Dataset</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://jingsenzhu.github.io/">Jingsen Zhu</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://luanfujun.github.io/">Fujun Luan</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://person.zju.edu.cn/en/yuchihuo/">Yuchi Huo</a><sup>1,3</sup>,
+            </span>
+            <span class="author-block">
+              Zihao Lin<sup>1</sup>,
+            </span>
+            <span class="author-block">
+              Zhihua Zhong<sup>1</sup>,
+            </span>
+            <span class="author-block">
+              Dianbing Xi<sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://www.cad.zju.edu.cn/home/rwang/">Rui Wang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://person.zju.edu.cn/en/0093140/">Hujun Bao</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              Jiaxiang Zheng<sup>4</sup>,
+            </span>
+            <span class="author-block">
+              Tang Rui<sup>4</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>State Key Lab of CAD&CG, Zhejiang University,</span>
+            <span class="author-block"><sup>2</sup>Adobe Research,</span>
+            <span class="author-block"><sup>3</sup>Zhejiang Lab,</span>
+            <span class="author-block"><sup>4</sup>KooLab, Manycore</span>
+          </div>
+          <h1 style="font-size:24px;font-weight:bold;color:#6e6e6e">SIGGRAPH Asia 2022 (Conference Proceedings)</h1>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://jingsenzhu.github.io/invrend"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-globe-asia"></i>
+                  </span>
+                  <span>Project</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/jingsenzhu/IndoorInverseRendering/tree/main/interiorverse"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Toolkits</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="#download"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-download"></i>
+                  </span>
+                  <span>Download</span>
+                </a>
+              </span>
+              <!-- Preview Link. -->
+              <span class="link-block">
+                <a href="https://1drv.ms/u/s!As0jHj7lvvu5aqePHgsTP03KLVE?e=xCiRrI"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Preview</span>
+                  </a>
+                </span>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content">
+            <video autoplay muted loop playsinline poster preload height="50%">
+              <source src="files/teaser1.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <video autoplay muted loop playsinline poster preload height="50%">
+              <source src="files/teaser2.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <video autoplay muted loop playsinline poster preload height="50%">
+              <source src="files/teaser3.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="subtitle has-text-centered">
+        InteriorVerse is a large-scale photorealistic indoor scene dataset proposed by paper <a href="https://jingsenzhu.github.io/invrend">Learning-based Inverse Rendering of Complex Indoor Scenes with Differentiable Monte Carlo Raytracing</a> in SIGGRAPH Asia'22 conference proceedings. It contains synthetic rendering results of over 4000 indoor scenes with ground truth material, geometry and spatially-varying lightings.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="overview">
+  <!-- Overview. -->
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title">Dataset Overview</h2>
+        <div class="content">
+          <img src="files/overview_mg.png" />
+        </div>
+        <div class="content has-text-justified">
+          InteriorVerse provides a large-scale dataset with ground truth synthetic material and geometry annotations, containing over <b>50,000 images</b> in over <b>4,000 well-designed indoor scenes</b>.
+        </div>
+        <div class="content">
+          <img src="files/overview_env.png" />
+        </div>
+        <div class="content has-text-justified">
+          InteriorVerse also provides ground truth HDR lighting data for 1,000 indoor scenes. Each scene contains <b>hundreds of spatially-varying environment maps</b> with known camera positions.
+        </div>
+      </div>
+    </div>
+    <!--/ Overview. -->
+  </div>
+</section>
+
+<section class="section" id="download">
+  <!-- Download. -->
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title">Download</h2>
+        <div class="content has-text-justified">
+          You can download our preview dataset containing 10 example scenes [<a href="https://1drv.ms/u/s!As0jHj7lvvu5aqePHgsTP03KLVE?e=xCiRrI">HERE</a>].
+        </div>
+        <div class="content has-text-justified">
+          For access to our full dataset, please agree to the terms of use [<a href="#">HERE</a>]. After receiving your agreement form, the links to our full dataset will be sent. Many thanks for your patience. If you use any part of our dataset/code, please cite our paper. For more details of data format and usage, please refer to our [<a href="https://github.com/jingsenzhu/IndoorInverseRendering/tree/main/interiorverse">README</a>].
+        </div>
+        <div class="content has-text-justified">
+          <a href="https://www.kujiale.com/">Kujiale.com</a> will reserve the right of the assets including furniture models, layouts and scenes, used in this dataset.
+        </div>
+      </div>
+    </div>
+    <!--/ Download. -->
+  </div>
+</section>
+
+<section class="section">
+  <!-- Acknowledgements. -->
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title">Acknowledgements</h2>
+        <div class="content has-text-justified">
+          We would like to thank <a href="https://www.kujiale.com/">Kujiale.com</a> for providing their database of production furniture models and layouts. We also thank the Kujiale artists and other professionals for their great efforts into editing and labelling millions of models and scenes. We also highly appreciate comments and technical support from Kujiale Rendering Group, as well as helpful discussions and comments from Prof. Rui Wang and other members of Rendering Group of State Key Lab of CAD&CG, Zhejiang University. 
+        </div>
+      </div>
+    </div>
+    <!--/ Acknowledgements. -->
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{zhu2022learning,
+    author = {Zhu, Jingsen and Luan, Fujun and Huo, Yuchi and Lin, Zihao and Zhong, Zhihua and Xi, Dianbing and Wang, Rui and Bao, Hujun and Zheng, Jiaxiang and Tang, Rui},
+    title = {Learning-Based Inverse Rendering of Complex Indoor Scenes with Differentiable Monte Carlo Raytracing},
+    year = {2022},
+    publisher = {ACM},
+    url = {https://doi.org/10.1145/3550469.3555407},
+    booktitle = {SIGGRAPH Asia 2022 Conference Papers},
+    articleno = {6},
+    numpages = {8}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Thanks to <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> for their excellent website templates.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
